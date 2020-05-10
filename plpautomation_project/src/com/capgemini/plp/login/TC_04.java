@@ -13,7 +13,7 @@ public class TC_04 {
 		c.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("nikitha12S");
 		c.findElement(By.xpath("//button[@class=\"_2AkmmA _1LctnI _7UHT_c\"]")).click();
 		Thread.sleep(5000);
-		String n = c.findElement(By.xpath("//span[@class=\"ZAtlA-\"]")).getText();
+		String n = c.findElement(By.xpath("//span[@class='ZAtlA-']")).getText();
 		System.out.println(n);
 		c.close();
 	}

@@ -6,19 +6,19 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SellOnlinePage {
 	@FindBy(xpath = "//input[@name='registrationNumber']")
-	private WebElement enterNumber;
+	private static WebElement enterNumber;
 	@FindBy(xpath = "//button/div")
-	private WebElement RegisterLink;
+	private static WebElement RegisterLink;
 
 	public SellOnlinePage() {
 		PageFactory.initElements(BaseClass.c, this);
 	}
 
-	public void enterNumberInRegister(String num) {
+	public static void enterNumberInRegister(String num) {
 		enterNumber.sendKeys(num);
 	}
 
-	public void clickOnRegister() {
+	public static void clickOnRegister() {
 		RegisterLink.click();
 	}
 

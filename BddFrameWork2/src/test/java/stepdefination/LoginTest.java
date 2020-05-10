@@ -1,6 +1,5 @@
 package stepdefination;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,20 +27,22 @@ public class LoginTest {
 		c.get("https://www.flipkart.com/");
 
 	}
-	//this by using scenerio ouline and examples
+	// this by using scenerio ouline and examples
 	// this is one used for with out using examples
 
-//	@Then("^user enter \"([^\"]*)\" and \\\"([^\\\"]*)\\\"$")
-//	public void user_enter_username_and_password(String username, String password) throws InterruptedException {
-//		c.findElement(By.xpath("//input[@class=\"_2zrpKA _1dBPDZ\"]")).sendKeys(username);
-//		Thread.sleep(5000);
-//		c.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys(password);
-//
-//	}
-	
-	
-	//this is for the normal use without using data driven testing and the usename and password is hardcoded
-	
+	/*
+	 * // @Then("^user enter \"([^\"]*)\" and \\\"([^\\\"]*)\\\"$") // public void
+	 * user_enter_username_and_password(String username, String password) throws
+	 * InterruptedException { //
+	 * c.findElement(By.xpath("//input[@class=\"_2zrpKA _1dBPDZ\"]")).sendKeys(
+	 * username); // Thread.sleep(5000); //
+	 * c.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys(password); //
+	 * // }
+	 */
+
+	// this is for the normal use without using data driven testing and the usename
+	// and password is hardcoded
+
 //	@Then("^user enter username and password$")
 //	public void user_enter_username_and_password() throws InterruptedException {
 //		c.findElement(By.xpath("//input[@class=\"_2zrpKA _1dBPDZ\"]")).sendKeys("9182681329");
@@ -50,9 +51,9 @@ public class LoginTest {
 //
 //	}
 	@Then("^user enter username and password$")
-	public void user_enter_username_and_password(DataTable credentials) throws InterruptedException  {
-	java.util.List<java.util.List<String>> data=	credentials.raw();
-	
+	public void user_enter_username_and_password(DataTable credentials) throws InterruptedException {
+		java.util.List<java.util.List<String>> data = credentials.raw();
+
 		c.findElement(By.xpath("//input[@class=\"_2zrpKA _1dBPDZ\"]")).sendKeys(data.get(0).get(0));
 		Thread.sleep(5000);
 		c.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys(data.get(0).get(1));

@@ -9,8 +9,7 @@ public class AssertionScript {
 		Assert.assertEquals(12, 13);
 		
 	}
-
-	@Test
+    @Test
 	public void test2() {
 		Assert.assertEquals(12, 13,"it is not matching");
 		

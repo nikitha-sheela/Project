@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<elements>
+	<NotificationLink>//a/div</NotificationLink>
+	<DesktopNotification>//div[@class='_2BCJf0']</DesktopNotification>
+	<HomePageelements>
+		<wishlistLink>//a[contains(@href, '/wishlist?link=home_wishlist')]
+		</wishlistLink>
+		<loginlink>Login</loginlink>
+		<MyAccount>//div[@class='dHGf8H']</MyAccount>
+	</HomePageelements>
+	<LoginPageElements>
+		<logintext>_1hgiYz</logintext>
+		<username>//input[@class='_2zrpKA _1dBPDZ']</username>
+		<password>//input[@type='password']</password>
+		<loginButton>/html/body/div[2]/div/div/div/div/div[2]/div/form/div[3]/button
+		</loginButton>
+		<closeButton>//button[@class='_2AkmmA _29YdH8']</closeButton>
+
+	</LoginPageElements>
+	<wishlistPage>
+		<wishlisttext>//div[@class='_3oWply']</wishlisttext>
+		<Product>TLVGit</Product>
+	</wishlistPage>
+	<ProductPage>
+		<AddToCartButton>//button[@class='_2AkmmA _2Npkh4 _2MWPVK']
+		</AddToCartButton>
+
+	</ProductPage>
+	<AddToCartPage>
+		<Product>_3gijNv col-12-12</Product>
+	</AddToCartPage>
+
+
+
+</elements>
